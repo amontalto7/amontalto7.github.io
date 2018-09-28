@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
 
 </head>
 
@@ -20,9 +21,9 @@
         <h1>Anthony Montalto</h1>
     </div>
     <div class="topnav">
-        <a id="About" href="index.html">About</a>
-        <a id="Portfolio" href="portfolio.html">Portfolio</a>
-        <a id="Contact" href="#">Contact</a>
+        <a id="a_About" href="index.html">About</a>
+        <a id="a_Portfolio" href="portfolio.html">Portfolio</a>
+        <a id="a_Contact" href="#">Contact</a>
     </div>
     </div>
   </header>
@@ -39,20 +40,20 @@
        <form>
            <div>
                 Name <br>
-                <input type="text" name="input-name">
+                <input type="text" name="input-name"> <br><br>
             </div>
             <div>
                 Email <br>
-                <input type="text" name="input-email">
+                <input type="text" name="input-email"><br><br>
             </div>
             <div>
                 Message <br>
                 <textarea name="input-message" rows="10" cols="30">
-                </textarea>
+                </textarea><br>
             </div>
             <div>
-                <input type="submit" name="btn_Submit" onclick="alert('Thank You!')"">
-                <button class="btn btn-primary" type="submit">Button</button>
+                <!-- <input type="submit" name="btn_Submit" "> -->
+                <button class="btn btn-primary" type="submit" onclick="alert('Thank You!')">Submit</button>
             </div>
        </form>
     </div>
