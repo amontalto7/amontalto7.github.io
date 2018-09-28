@@ -3,12 +3,36 @@
     position: relative;
     }
 
+html, body {
+    overflow-x: hidden;
+  }
 
 body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/cork-wallet.png");
+    background-color:#e3dfda;
     color: #777777;
-    transition: filter 20s;
-    filter: hue-rotate(10deg);
+    
+    /* transition: filter 20s;
+    filter: hue-rotate(10deg); */
+}
+
+/* a element pseudo classes */
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover, 
+a:active {
+    text-decoration: underline;
+}
+
+#a_About,
+#a_Portfolio,
+#a_Contact  {
+    margin: 10px;
+    color: #777777;
 }
 
 /* Utility class */
@@ -21,59 +45,105 @@ body {
 h1,
 h2 {
     font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
 }
 
 h1 {
     color:#ffffff;
-    font-size: 1.5vw;
+    font-size: 1em;
+    
 }
 
 .myname {
     background-color:#4aaaa5;
-    width: 25%; 
+    width: 200px; 
     display: inline;
     float: left;
     position: relative;
+    align-items: center;
     /* margin-left: 20px; */
-    padding: 5px 25px 0px 25px;
+    padding: 15px 25px 15px 25px;
 }
 
 .topnav {
-    float: right;
     position: absolute;
     right:10px;
-    bottom:0;
-    font-size: 1.1vw;
+    bottom:20px;
+    font-size: 1vw;
+    
 }
 
-header,
+#innerHeader,
 footer,
 #main {
     width: 960px;
-    margin-left: 10%;
-    margin-right: 10%;
- 
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 header {
-    background-color: #ffffff;
+    width:100%;
     border-bottom: 1px solid #cccccc;
     border: 100%;
-    /* make container fit the content */
-    display:inline-block;
-    white-space: nowrap;
-    /* position: relative; */
+    position: relative;
+    display:inline-flex;
+    
 }
 
+#innerHeader{
+    background-color: #ffffff;
+    /* make container fit the content */
+    white-space: nowrap;
+    display: inline-block;
+
+}
+
+
 #main {
+    margin-top: 30px;
     background-color:#ffffff;
     border: 1px #dddddd solid;
     /* display: block; */
     clear: both;
-    padding: 1%;
+    padding: 2%;
+}
+
+
+#profilepic {
+    float: left;
+    display: inline;
+    margin: 0px 20px 20px 0px;
+    height: 100px;
+    width: auto;
+}
+
+.imgPortfolio {
+    width: 150px;
+}
+
+.maintxt {
+    margin: 20px 0px 20px 0px;
+    font-size: medium;
 }
 
 footer {
     background-color: #666666;
     color: #ffffff; 
+    border-top: #4aaaa5 5px solid;
+    display:inline-block;
+    white-space:nowrap;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    padding-top: 1em;
+    /* justify-content: center; */
+}
+
+.copy {
+    /* position: absolute; */
+    font-size: x-small;
+    bottom:0;
+    margin-left: auto;
+    margin-right: auto;
 }

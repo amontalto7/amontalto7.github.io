@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anthony Montalto - Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">
+
 </head>
 
 <body>
 
     <!-- HEADER / NAV -->
   <header>
+    <div id="innerHeader">  
     <!-- @todo add Name, and links for About, Portfolio, and Contact -->
     <div class="myname">
         <h1>Anthony Montalto</h1>
@@ -20,7 +24,7 @@
         <a id="Portfolio" href="#">Portfolio</a>
         <a id="Contact" href="contact.html">Contact</a>
     </div>
-
+    </div>
   </header>
 
   <!-- MAIN -->
@@ -30,20 +34,35 @@
     </div>
     <hr>
     <div class="main_body">
-       <a href="#"><img src="assets/images/profilepic.jpg" alt="Hangman"></a>
-       <a href="#"><img src="assets/images/profilepic.jpg" alt="RPG Game"></a>
-       <br>
-       <a href="#"><img src="assets/images/profilepic.jpg" alt="Trivia Game"></a>
-       <a href="#"><img src="assets/images/profilepic.jpg" alt="Rutgers Info Widget"></a>
-       <br>
-       <a href="#"><img src="assets/images/profilepic.jpg" alt="Rock Paper Scissors"></a>
+        <div class="label" id="hangman">
+            <a id="a_hangman" href="#"><img class="imgPortfolio" src="assets/images/hangman.jpg" alt="Hangman">Hangman</a>
+        </div>
+        
+        <div class="label" id="rpg">
+            <a id="a_rpg" href="#"><img class="imgPortfolio" src="assets/images/rpg.jpg" alt="RPG Game">RPG</a>
+       </div>
 
+       <div class="clearfix"> </div>
+
+       <div class="label" id="trivia">
+           <a id="a_trivia" href="#"><img class="imgPortfolio" src="assets/images/trivia.png" alt="Trivia Game">Trivia Game</a>
+       </div>
+    
+       <div class="label" id="rutgers">
+            <a id="a_rutgers" href="#"><img class="imgPortfolio" src="assets/images/college-photo_7760_256x256mm.jpg" alt="Rutgers Info Widget">Rutgers Info Widget</a>
+       </div>
+
+       <div class="clearfix"> </div>
+
+       <a id="a_rps" href="#"><img class="imgPortfolio" src="assets/images/rps256x256bb.jpg" alt="Rock Paper Scissors"></a>
+       <div class="label" id="rps">Rock Paper Scissors</div>
+       
     </div>
   </section>
 
 
   <footer>
-      <p>Copyright &copy; 2018</p>
+      <p class="copy">Copyright &copy; 2018</p>
   </footer>
 
 </body>

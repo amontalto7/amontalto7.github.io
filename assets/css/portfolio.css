@@ -1,0 +1,35 @@
+.main_body {
+    align-items: center;
+    white-space: nowrap;
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+a {
+    margin: 10px;
+}
+
+#a_hangman {
+    float:left;
+}
+
+#a_rpg {
+    float:left;
+
+}
+
+#a_trivia {
+    float:left;
+
+}
+
+#a_rutgers {
+    float:left;
+
+}
+
+#a_rps {
+    float:left;
+
+}
