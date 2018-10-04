@@ -14,8 +14,12 @@ body {
     color: #777777;
     background-image: url("../images/cork-wallet.png");
         /* below code is screwing up formatting on portfolio and contact pages. https://css-tricks.com/couple-takes-sticky-footer/ */
-    /* display: flex; */
-    /* flex-direction: column; */
+}
+
+.flexy {
+    display: flex;
+    flex-direction: column;
+    height:100%;
 }
 
 /* a element pseudo classes */
@@ -101,7 +105,7 @@ header {
 }
 
 .content {
-    /* flex: 1 0 auto; */
+    flex: 1 0 auto;
     margin-bottom: 25px;
 }
 
