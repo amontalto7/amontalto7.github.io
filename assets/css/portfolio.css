@@ -2,26 +2,18 @@
     display: inline-block;
 }
 
-imgPortfolio {
-    z-index: -99999;
-    width: auto;
-}
-
-.container {
+.portfoliocontainer {
     float:left;
     margin: 5px;
     color: white;
     display: flex;
     height: 150px;
     width: 200px;
-    
 }
 
 .imgPortfolio {
-    /* object-fit: fill; */
+    object-fit: fill;
      width: 150px;
-    /*  height: auto; 
-     */
     max-height: 100%;
     max-width: 100%;  
 }
@@ -44,4 +36,21 @@ imgPortfolio {
 
 .label:hover {
     background-color: #3b8884;
+}
+
+
+@media screen and (max-width: 640px) {
+
+.portfoliocontainer {
+    float:none;
+    display: static;
+    height: auto;
+    width: auto;
+    object-fit:cover;
+}
+.imgPortfolio {
+     width: 100%;
+     height: auto;
+     display: static;
+    }
 }

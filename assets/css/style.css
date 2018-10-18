@@ -159,3 +159,63 @@ hr {
     background: #777777;
     background-image: linear-gradient(to right, #ccc, #777777, #ccc);
 }
+
+@media only screen and (max-width: 980px) {
+    body{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #main {
+        /* margin-top:10px; */
+        position: static;
+        border:none;
+        width:90%;
+    }
+}
+    
+    @media screen and (max-width: 640px) {
+
+     header {
+         position: static;
+         display: block;
+     }
+     .topnav {
+        position: static;
+        float:none;
+        width:100%;
+        font-size: 1.2em;  
+        /* background-color: black;   */
+    }
+    .myname {
+        width:100%; 
+        display: block;
+        float:none;
+        position: static;
+        width:100%;
+    }
+    #a_About,
+    #a_Portfolio,
+    #a_Contact  {
+        margin: 25px;
+}
+
+    #main {
+        position: static;
+        border:none;
+        width:90%;
+        padding-top: none;
+    }
+    #profilepic {
+        display: block;
+        float: none;
+        width:100%;
+        height: auto;
+    }
+    .content {
+        margin-bottom:0;
+    }
+
+    }     
