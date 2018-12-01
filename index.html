@@ -1,53 +1,177 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
+<title>Portfolio - Anthony Montalto</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <link rel="stylesheet" href="assets\css\w3-theme-teal.css"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets\css\style.css">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Anthony Montalto - About</title>
-    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+<body class="w3-text-white">
 
-<body>
-<div class="flexy">
-  <header>
-    <div id="innerHeader">  
-        <!-- @todo add Name, and links for About, Portfolio, and Contact -->
-        <div class="myname">
-            <h1>Anthony Montalto</h1>
-        </div>
-        <div class="topnav">
-            <a id="a_About" href="#">About</a>
-            <a id="a_Portfolio" href="portfolio.html">Portfolio</a>
-            <a id="a_Contact" href="contact.html">Contact</a>
-        </div>
-    </div>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <div class="profile"> </div>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black lnav">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large lnav">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large lnav">
+    <i class="fa fa-code w3-xxlarge"></i>
+    <p>PORTFOLIO</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large lnav">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">portfolio</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-text-white w3-animate-opacity" id="home">
+    <!-- <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Anthony Montalto.</h1> -->
+    <img id="mainLogo" src="assets/images/AnthonyLogoTransparent.png" alt="Anthony Montalto" width="500" height="500"><br>
+    <p>Full Stack Web Developer.</p>
   </header>
 
-  <div class="clearfix"></div>
-
-<div class="content">
-  <section id="main">
-    <div class="main_header">
-        <h2>About Me</h2>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-light-gray w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <img src="assets/images/profilepic.jpg" alt="Anthony Montalto" class="w3-image aboutpic">
+    <p>
+            Born and raised in Queens, NY, I've taken an interest in technology at an early age. In 5th grade, I took my first programming classes, learning Logo and Basic. I have about 17 years of experience in Quality Assurance, Automation testing, and coding. I'm currently working as a lead at SiriusXM on the Selenium Automation Team.
+    </p><p>
+            I'm currently taking a full stack web development boot camp at Columbia University in order to further my knowledge and skillset and get up to date on the latest technologies, best practices, and toolsets.
+        </p><p>
+            An avid traveler, comic book nerd, tech geek, foodie, and aspiring digital nomad, I'm excited for all the possibilities that will open up as this journey continues.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Javascript. Node.js. jQuery. CSS. HTML. Firebase. Bootstrap. Materialize. AJAX. JSon. VBScript. Java. SQL. HP ALM. Excel</p>
+    
+ 
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" id="downloadResume">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
     </div>
-    <hr>
-    <div class="main_body">
-        <img id="profilepic" src="assets/images/profilepic.jpg" alt="Anthony Montalto">
-        
-        <p class="maintxt">Born and raised in Queens, NY, I've taken an interest in technology at an early age. In 5th grade, I took my first programming classes, learning Logo and Basic. I have about 17 years of experience in Quality Assurance, Automation testing, and coding. I'm currently working as a lead at SiriusXM on the Selenium Automation Team.</p>
-        <p class="maintxt">I'm currently taking a full stack web development boot camp at Columbia University in order to further my knowledge and skillset and get up to date on the latest technologies, best practices, and toolsets.</p>
-        <p class="maintxt">An avid traveler, comic book nerd, tech geek, foodie, and aspiring digital nomad, I'm excited for all the possibilities that will open up as this journey continues.</p>
+    
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="portfolio">
+    <h2 class="w3-text-light-grey">My Portfolio</h2>
+    <hr style="width:200px" class="w3-opacity">
 
+    <!-- Grid for portfolio -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+          <div class="portfolio-container w3-hover">
+            <a href="https://amontalto7.github.io/WheresHappening/" target="_blank"><img src="assets/images/WheresHappenin.png" style="width:100%" alt="Where's Happenin"></a>
+            <a href="https://github.com/amontalto7/WheresHappening" target="_blank">            
+              <div class="portfolio-label">
+                <h1>&nbsp;Where's Happenin' <i class="fa fa-github"></i></h1>
+              </div>
+            </a>
+          </div>
+          <div class="portfolio-container w3-hover">
+            <a href="https://amontalto7.github.io/GifTastic/" target="_blank"><img src="assets/images/GifTastic.PNG" style="width:100%" alt="GifTastic"></a>
+            <a href="https://github.com/amontalto7/GifTastic" target="_blank">            
+              <div class="portfolio-label">
+                <h1>&nbsp;Giftastic <i class="fa fa-github"></i></h1>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio-container w3-hover">
+            <a href="https://amontalto7.github.io/TriviaGame/" target="_blank"><img src="assets/images/Trivia.PNG" style="width:100%" alt="Trivia Game"></a>
+            <a href="https://github.com/amontalto7/TriviaGame" target="_blank">            
+              <div class="portfolio-label">
+                <h1>&nbsp;Trivia <i class="fa fa-github"></i></h1>
+              </div>
+            </a>
+          </div>
+  
+          <div class="portfolio-container w3-hover">
+            <a href="https://amontalto7.github.io/Crystal-Collector/" target="_blank"><img src="assets/images/CrystalCollector.PNG" style="width:100%" alt="Crystal COllector"></a>
+            <a href="https://github.com/amontalto7/Crystal-Collector" target="_blank">            
+              <div class="portfolio-label">
+                <h1>&nbsp;Crystal Collector <i class="fa fa-github"></i></h1>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+    <!-- End photo grid -->
     </div>
-  </section>
-</div>  
+  <!-- End Portfolio Section -->
+  </div>
 
-  <footer>
-      <p class="copy">Copyright &copy; 2018</p>
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-light-gray" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> New York City, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 718 986 9744</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: anthonyimontalto@gmail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-light-gray w3-xlarge">
+    <a href="https://www.facebook.com/amontalto" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <a href="https://github.com/amontalto7" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <a href="https://www.linkedin.com/in/anthony-montalto-b4811a2" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
   </footer>
-</div>
-</body>
 
+<!-- END PAGE CONTENT -->
+</div>
+
+  <script type="text/javascript">
+    document.getElementById("downloadResume").onclick = function() {
+      window.open("https://docs.google.com/document/d/1HK604E7RCKD6RJVnSPg2OCwOXiNzOJwj9RdBWvU7TI4/edit?usp=sharing");      
+    };
+  </script>
+</body>
 </html>
