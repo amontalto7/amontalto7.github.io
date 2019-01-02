@@ -9,6 +9,12 @@ body, header {
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 
+#mainLogo {
+    height: 500px;
+    width: 500px;
+}
+
+
 .profile {
     background: url("../images/profilepic.jpg") no-repeat;
     background-size: 120px;
@@ -75,4 +81,16 @@ body, header {
 }
 
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+@media only screen and (max-width: 640px) {
+    #main {margin-left: 0}
+
+    #mainLogo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .portfolio-label {
+        font-size: 10;
+    }
+}
+
