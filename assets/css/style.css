@@ -3,7 +3,10 @@ body, header {
     color: white;
     background-color: #174c4f;
 }
-.w3-row-padding img {margin-bottom: 12px}
+
+/* .w3-row-padding img {margin-bottom: 12px} */
+.w3-half {margin-bottom: 12px}
+
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: rgb(233, 151, 151);}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
@@ -45,9 +48,12 @@ body, header {
 .portfolio-container {
     position: relative;
     text-align: center;
+    height: 300px;
     color: white;
+
     display: inline-block;
     white-space: nowrap;
+    /* margin-bottom: 12px; */
     /* background-color: white; */
 }
 
@@ -58,28 +64,38 @@ body, header {
 .portfolio-label {
     position: absolute;
     top: 50%;
-    /* left: 16px; */
     width: 100%;
     display: flex;
     background-color: #336669;
-    /* z-index: 5; */
     opacity: .90;
-    border-top: 1px solid #174c4f;
-    border-bottom: 1px solid #174c4f;
+    /* border-top: 1px solid #174c4f; */
+    /* border-bottom: 1px solid #174c4f; */
 }
 
-.portfolio-label > a {
+.portfolio-label > a, .github > a {
     text-decoration: none;
-    /* font-weight: bold; */
 }
 
-.portfolio-label:hover{
-    border-top: 1px solid #35174f;
-    border-bottom: 1px solid #35174f;
+.portfolio-label:hover, .github:hover {
     color: gold;
     background-color: #174c4f;
 }
 
+.pimage {
+    height:100%; 
+    width:100%;
+    /* max-width: 100%; */
+    /* max height: 100%; */
+    /* object-fit: cover; */
+}
+
+.github {
+    position: absolute;
+    bottom: -14px;
+    /* left: 5px; */
+    background-color: #336669;
+    font-size: .8em;
+}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 640px) {
     #main {margin-left: 0}
@@ -89,6 +105,11 @@ body, header {
         width: 200px;
     }
 
+    .portfolio-container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+    
     .portfolio-label {
         font-size: 10;
     }
