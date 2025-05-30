@@ -46,6 +46,21 @@ footer.light-mode {
 .w3-text-white.dark-mode {
     color: white !important;
   }
+
+  /* Default: no border */
+.theme-logo {
+  border: none;
+  border-radius: 50%; /* Optional: make it circular */
+  transition: border 0.3s ease;
+}
+
+/* Light mode: add border */
+body.light-mode .theme-logo {
+  border: 4px double #444;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
   
 /* .w3-row-padding img {margin-bottom: 12px} */
 .w3-half {
@@ -84,7 +99,7 @@ footer.light-mode {
   margin-left: 120px;
 }
 
-#mainLogo {
+#logo-img {
   height: 500px;
   width: 500px;
 }
@@ -284,7 +299,7 @@ body.light-mode .portfolio-label h2 {
     margin-left: 0;
   }
 
-  #mainLogo {
+  #logo-img {
     height: 200px;
     width: 200px;
   }

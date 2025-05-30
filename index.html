@@ -60,7 +60,7 @@
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-animate-opacity" id="home">
     <!-- <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Anthony Montalto.</h1> -->
-    <img id="mainLogo" src="assets/images/AnthonyLogoTransparent.png" alt="Anthony Montalto"><br>
+    <img id="logo-img" class="theme-logo" src="assets/images/AnthonyLogo-dark.png" alt="Anthony Montalto"><br>
     <p>Building Reliable Software from Code to Cloud | SDET | Full-Stack Developer</p>
   </header>
 
@@ -295,6 +295,7 @@
   const toggleButton = document.getElementById('toggle-theme');
   const themeIcon = document.getElementById('theme-icon');
   const body = document.body;
+  const logoImg = document.getElementById('logo-img');
   const themeElements = document.querySelectorAll(
   'h2, .lnav, .portfolio-container, .w3-sidebar, .w3-content, .w3-padding-large, .w3-justify, .w3-text-white, #myNavbar, .portfolio-label, header, footer'
 );
@@ -323,6 +324,9 @@ toggleButton.addEventListener('click', () => {
   themeElements.forEach(el => el.classList.toggle('light-mode'));
   localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
   updateThemeIcon();
+  logoImg.src = body.classList.contains('light-mode')
+  ? './assets/images/AnthonyLogo-light.png'
+  : './assets/images/AnthonyLogo-dark.png';
   animateIcon();
 });
 
@@ -332,6 +336,10 @@ window.onload = () => {
     body.classList.add('light-mode');
     themeElements.forEach(el => el.classList.add('light-mode'));
   }
+  logoImg.src = savedTheme === 'light'
+  ? './assets/images/AnthonyLogo-light.png'
+  : './assets/images/AnthonyLogo-dark.png';
+
   updateThemeIcon();
   setTimeout(() => body.classList.add('page-loaded'), 100);
 };
