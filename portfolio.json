@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Where's Happenin'",
+    "image": "assets/images/WheresHappenin.png",
+    "live": "https://amontalto7.github.io/WheresHappenin/",
+    "repo": "https://github.com/amontalto7/WheresHappenin"
+  },
+  {
+    "title": "Lazy Cupboard",
+    "image": "assets/images/LazyCupboard.jpg",
+    "live": "https://lazycupboard.onrender.com/",
+    "repo": "https://github.com/amontalto7/LazyCupboard"
+  },
+  {
+    "title": "React Memory Game",
+    "image": "assets/images/clicky.png",
+    "live": "https://amontalto7.github.io/ClickyGame/",
+    "repo": "https://github.com/amontalto7/clickyGame"
+  },
+  {
+    "title": "Crystal Collector",
+    "image": "assets/images/CrystalCollector.PNG",
+    "live": "https://amontalto7.github.io/CrystalCollector/",
+    "repo": "https://github.com/amontalto7/CrystalCollector"
+  },
+  {
+    "title": "GOT Friend Finder",
+    "image": "assets/images/friendFinder.png",
+    "live": "https://friendfinder-3166.onrender.com/",
+    "repo": "https://github.com/amontalto7/FriendFinder"
+  },
+  {
+    "title": "Trippin' Travel",
+    "image": "assets/images/Trippin.png",
+    "live": "https://github.com/amontalto7/TrippinMobileApp",
+    "repo": "https://github.com/amontalto7/TrippinMobileApp"
+  },
+  {
+    "title": "Trivia",
+    "image": "assets/images/trivia.png",
+    "live": "https://amontalto7.github.io/TriviaGame/",
+    "repo": "https://github.com/amontalto7/TriviaGame"
+  },
+  {
+    "title": "Giftastic",
+    "image": "assets/images/GifTastic.PNG",
+    "live": "https://amontalto7.github.io/GifTastic/",
+    "repo": "https://github.com/amontalto7/GifTastic"
+  },
+  {
+    "title": "News Scraper",
+    "image": "assets/images/mongoscraper.png",
+    "live": "https://github.com/amontalto7/newsscraper",
+    "repo": "https://github.com/amontalto7/newsscraper"
+  },
+  {
+    "title": "LIRI CLI Node App",
+    "image": "assets/images/liri.png",
+    "live": "https://github.com/amontalto7/liri-node-app",
+    "repo": "https://github.com/amontalto7/liri-node-app"
+  },
+  {
+    "title": "Bamazon CLI App",
+    "image": "assets/images/bamazon.png",
+    "live": "https://github.com/amontalto7/Bamazon",
+    "repo": "https://github.com/amontalto7/Bamazon"
+  }
+]
