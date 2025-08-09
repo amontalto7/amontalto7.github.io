@@ -1,5 +1,25 @@
 [
   {
+    "title": "Full-Stack E-Commerce QA Automation Framework",
+    "description": "End-to-end automation suite for a microservices e-commerce app, covering UI, API, and performance testing. Built with Playwright, RestAssured, k6, Docker, and Allure reporting. Runs locally or in CI/CD with GitHub Actions, publishing test results automatically to GitHub Pages.",
+    "technologies": [
+      "Playwright",
+      "RestAssured",
+      "k6",
+      "Docker",
+      "Allure",
+      "GitHub Actions",
+      "Java",
+      "TypeScript",
+      "Maven",
+      "Node.js"
+    ],
+    "image": "assets/images/ecomm-qa-framework-overview.png",
+    "live": "https://amontalto7.github.io/ecomm-qa-framework/",
+    "repo": "https://github.com/amontalto7/ecomm-qa-framework"
+  },
+
+  {
     "title": "Where's Happenin'",
     "image": "assets/images/WheresHappenin.png",
     "live": "https://amontalto7.github.io/WheresHappenin/",
