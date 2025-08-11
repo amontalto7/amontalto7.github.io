@@ -1,315 +1,118 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
+/* ========= Base & Theme ========= */
+* { box-sizing: border-box; }
+body, h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif; }
+
+body, header { color: #fff; background-color: #174c4f; }
+body.dark-mode, header.dark-mode, .w3-content.dark-mode, .w3-padding-large.dark-mode, .w3-justify.dark-mode, footer.dark-mode {
+  color: #fff !important; background-color: #174c4f;
 }
-body,
-header {
-  color: white;
-  background-color: #174c4f;
+body.light-mode, header.light-mode, .w3-content.light-mode, .w3-padding-large.light-mode, .w3-justify.light-mode, footer.light-mode {
+  color: #333 !important; background-color: #f5f5f5;
 }
+.w3-text-white.light-mode { color: #333 !important; }
+.w3-text-white.dark-mode  { color: #fff !important; }
 
-header.light-mode {
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  
+/* Logo */
+.theme-logo { border: none; border-radius: 50%; transition: border .3s ease; }
+body.light-mode .theme-logo { border: 4px double #444; box-shadow: 0 0 10px rgba(0,0,0,.1); }
 
-body.dark-mode,
-header.dark-mode,
-.w3-content.dark-mode,
-.w3-padding-large.dark-mode,
-.w3-justify.dark-mode,
-footer.dark-mode {
-  color: white !important;
-  background-color: #174c4f;
-}
+#logo-img { height: 500px; width: 500px; }
 
-body.light-mode,
-header.light-mode,
-.w3-content.light-mode,
-.w3-padding-large.light-mode,
-.w3-justify.light-mode,
-footer.light-mode {
-  color: #333 !important;
-  background-color: #f5f5f5;
-}
+/* Sidebar & Nav */
+.w3-sidebar { width: 120px; background: rgb(233,151,151); }
+.w3-sidebar.light-mode { background: #f0f0f0; color: #333; }
+.w3-sidebar.light-mode a { color: #333; }
+.w3-sidebar.light-mode a:hover { background: #ddd; color: #000; }
 
-.w3-text-white.light-mode {
-    color: #333 !important;
-  }
+.lnav, nav { background-color: #336669 !important; }
+.lnav:hover { color: #fff !important; background-color: #174c4f !important; }
+#myNavbar.light-mode { background: #e0e0e0; color: #333; }
 
-.w3-text-white.dark-mode {
-    color: white !important;
-  }
+#main { margin-left: 120px; }
 
-  /* Default: no border */
-.theme-logo {
-  border: none;
-  border-radius: 50%; /* Optional: make it circular */
-  transition: border 0.3s ease;
-}
+/* Profile / About */
+.profile { background: url("../images/profilepic.jpg") no-repeat; background-size: 120px; height: 126px; }
+.profile:hover { background: url("../images/profilepic_h.jpg") no-repeat; background-size: 120px; }
+.aboutpic { float: left; display: inline; width: 200px; margin: 10px 20px 20px 0; }
 
-/* Light mode: add border */
-body.light-mode .theme-logo {
-  border: 4px double #444;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+/* Footer (light mode) */
+footer.light-mode { background: #e0e0e0; color: #333; }
 
-  
-/* .w3-row-padding img {margin-bottom: 12px} */
-.w3-half {
-  margin-bottom: 12px;
-}
+/* Page fade-in */
+body { opacity: 0; transition: opacity .6s ease, background-color .5s ease, color .5s ease; }
+.w3-sidebar, footer { transition: background-color .5s ease, color .5s ease; }
+body.page-loaded { opacity: 1; }
 
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {
-  width: 120px;
-  background: rgb(233, 151, 151);
-}
-
-/* Light mode sidebar */
-.w3-sidebar.light-mode {
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  
-  .w3-sidebar.light-mode a {
-    color: #333;
-  }
-  
-  .w3-sidebar.light-mode a:hover {
-    background-color: #ddd;
-    color: #000;
-  }
-
-  /* Light mode navbar on mobile */
-  #myNavbar.light-mode {
-    background-color: #e0e0e0;
-    color: #333;
-  }
-
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {
-  margin-left: 120px;
-}
-
-#logo-img {
-  height: 500px;
-  width: 500px;
-}
-
-.profile {
-  background: url("../images/profilepic.jpg") no-repeat;
-  background-size: 120px;
-  height: 126px;
-}
-
-.profile:hover {
-  background: url("../images/profilepic_h.jpg") no-repeat;
-  background-size: 120px;
-}
-
-.aboutpic {
-  float: left;
-  display: inline;
-  width: 200px;
-  margin: 10px 20px 20px 0;
-}
-
-.lnav,
-nav {
-  background-color: #336669 !important;
-}
-
-.lnav:hover {
-  color: white !important;
-  background-color: #174c4f !important;
-}
-
-.portfolio-container {
-  position: relative;
-  text-align: center;
-  height: 300px;
-  color: white;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.portfolio-container:hover {
-  box-shadow: 0 0 3px #ff0000, 0 0 5px gold;
-}
-
-.portfolio-label {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  background-color: #336669;
-  opacity: 0.9;
-  /* border-top: 1px solid #174c4f; */
-  /* border-bottom: 1px solid #174c4f; */
-}
-
-.portfolio-label > a,
-.github > a {
-  text-decoration: none;
-}
-
-.portfolio-label:hover,
-.github:hover {
-  color: gold;
-  background-color: #174c4f;
-}
-
-.pimage {
-  height: 100%;
-  width: 100%;
-  /* max-width: 100%; */
-  /* max height: 100%; */
-  /* object-fit: cover; */
-}
-
-.github {
-  position: absolute;
-  bottom: -14px;
-  /* left: 5px; */
-  background-color: #336669;
-  font-size: 0.8em;
-} 
-
-.lnav.light-mode,
-nav.light-mode {
-  background-color: #e0e0e0 !important;
-  color: #333 !important;
-}
-
-.lnav.light-mode:hover {
-  background-color: #cccccc !important;
-}
-
-/* Adjust portfolio hover for light mode */
-.portfolio-container.light-mode:hover {
-  box-shadow: 0 0 8px #666, 0 0 12px #aaa;
-}
-
-
-
-/* Fade-in Page */
-body {
-    opacity: 0;
-    transition: opacity 0.6s ease, background-color 0.5s ease, color 0.5s ease;
-  }
-  
-  .w3-sidebar,
-  .portfolio-container,
-  .portfolio-label, 
-  footer  {
-    transition: background-color 0.5s ease, color 0.5s ease;
-  }
-
-  body.page-loaded {
-    opacity: 1;
-  }
-  
-
-/* Fancy floating toggle button */
+/* Theme toggle button */
 .theme-toggle-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #336669;
-  color: white;
-  border-radius: 50%;
-  border: none;
-  width: 45px;
-  height: 45px;
-  font-size: 20px;
-  z-index: 1000;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: fixed; top: 20px; right: 20px;
+  background: #336669; color: #fff; border-radius: 50%; border: none;
+  width: 45px; height: 45px; font-size: 20px; z-index: 1000; cursor: pointer;
+  transition: background-color .3s ease, transform .3s ease;
+}
+.theme-toggle-btn:hover { background: #174c4f; transform: rotate(20deg); }
+@keyframes spin { from{transform:rotate(0)} to{transform:rotate(360deg)} }
+.spin { animation: spin .6s ease; }
+@keyframes pop { 0%{transform:scale(1)} 50%{transform:scale(1.4)} 100%{transform:scale(1)} }
+.pop { animation: pop .3s ease; }
+
+/* Small screens */
+@media (max-width: 640px) {
+  #main { margin-left: 0; }
+  #logo-img { height: 200px; width: 200px; }
 }
 
-.theme-toggle-btn:hover {
-  background: #174c4f;
-  transform: rotate(20deg);
+/* ========= Portfolio: Modern Cards (image top, text below) ========= */
+.projects { margin-top: 24px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
 }
 
-/* Spin animation for icon */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--card-bg, #122e33);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 14px 28px rgba(0,0,0,.12); }
+
+/* Top image */
+.card .cover { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+
+/* Content */
+.card .content { padding: 14px 14px 12px; }
+
+.card .title {
+  margin: 0 0 6px;
+  font-weight: 700; font-size: 1.06rem; line-height: 1.25;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.card .desc {
+  margin: 0; font-size: .93rem; line-height: 1.35;
+  color: rgba(255,255,255,.92);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
 
-.spin {
-  animation: spin 0.6s ease;
+/* Tags + Buttons */
+.tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+.tag  { font-size: .72rem; padding: 4px 8px; border-radius: 999px; background: rgba(255,255,255,.14); color:#fff; }
+
+.actions { margin-top: 12px; display: flex; gap: 8px; }
+.btn {
+  display: inline-flex; align-items: center;
+  font-size: .82rem; padding: 8px 10px; border-radius: 10px;
+  background: #ffffff; color: #0e2f33; text-decoration: none;
+  transition: transform .15s ease;
 }
+.btn:hover { transform: translateY(-2px); }
+.btn.secondary { background: transparent; color:#fff; border:1px solid rgba(255,255,255,.28); }
 
-@keyframes pop {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.4); }
-    100% { transform: scale(1); }
-  }
-  
-  .pop {
-    animation: pop 0.3s ease;
-  }
-
-  
-  /* Light mode portfolio labels */
-  .portfolio-label.light-mode {
-    background-color: #e0e0e0;
-    color: #333;
-  }
-  
-  /* Light mode footer */
-  footer.light-mode {
-    background-color: #e0e0e0;
-    color: #333;
-  }
-  
-
-
-/* Automatically color all h2s based on body mode */
-
-body.light-mode .portfolio-label h2 {
-    color: #333 !important;
-  }
-  
-  body.dark-mode .portfolio-label h2 {
-    color: white !important;
-  }
-  
-  .portfolio-label h2 {
-    transition: color 0.5s ease;
-  }
-
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 640px) {
-  #main {
-    margin-left: 0;
-  }
-
-  #logo-img {
-    height: 200px;
-    width: 200px;
-  }
-
-  .portfolio-container {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .portfolio-label {
-    font-size: 10;
-  }
-}
+/* Light mode compatibility */
+body.light-mode .card { --card-bg: #ffffff; }
+body.light-mode .card .desc { color: #334; }
+body.light-mode .tag { background: rgba(0,0,0,.06); color: #223; }
+body.light-mode .btn.secondary { color:#223; border-color: rgba(0,0,0,.15); }
