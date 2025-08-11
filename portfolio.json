@@ -1,19 +1,9 @@
 [
   {
     "title": "Full-Stack E-Commerce QA Automation Framework",
-    "description": "End-to-end automation suite for a microservices e-commerce app, covering UI, API, and performance testing. Built with Playwright, RestAssured, k6, Docker, and Allure reporting. Runs locally or in CI/CD with GitHub Actions, publishing test results automatically to GitHub Pages.",
-    "technologies": [
-      "Playwright",
-      "RestAssured",
-      "k6",
-      "Docker",
-      "Allure",
-      "GitHub Actions",
-      "Java",
-      "TypeScript",
-      "Maven",
-      "Node.js"
-    ],
+    "category": "QA",
+    "description": "UI (Playwright) + API (RestAssured) + perf (k6) for a Dockerized microservices shop, with GitHub Actions and Allure reports published to Pages.",
+    "technologies": ["Playwright", "RestAssured", "Docker", "Allure", "GitHub Actions", "Java", "TypeScript"],
     "image": "assets/images/ecomm-qa-framework-overview.png",
     "live": "https://amontalto7.github.io/ecomm-qa-framework/",
     "repo": "https://github.com/amontalto7/ecomm-qa-framework"
@@ -21,66 +11,99 @@
 
   {
     "title": "Where's Happenin'",
+    "category": "Full‑Stack",
+    "description": "Find nearby events on an interactive map with search and filtering.",
+    "technologies": ["JavaScript", "Google Maps API", "REST", "Bootstrap"],
     "image": "assets/images/WheresHappenin.png",
     "live": "https://amontalto7.github.io/WheresHappenin/",
     "repo": "https://github.com/amontalto7/WheresHappenin"
   },
   {
     "title": "Lazy Cupboard",
+    "category": "Full‑Stack",
+    "description": "Recipe suggestions based on what’s already in your pantry.",
+    "technologies": ["Node", "Express", "MongoDB", "Bootstrap"],
     "image": "assets/images/LazyCupboard.jpg",
     "live": "https://lazycupboard.onrender.com/",
     "repo": "https://github.com/amontalto7/LazyCupboard"
   },
   {
     "title": "React Memory Game",
+    "category": "Full‑Stack",
+    "description": "Simple memory click game built with React components and state.",
+    "technologies": ["React", "JavaScript", "CSS"],
     "image": "assets/images/clicky.png",
     "live": "https://amontalto7.github.io/ClickyGame/",
     "repo": "https://github.com/amontalto7/clickyGame"
   },
   {
     "title": "Crystal Collector",
+    "category": "Full‑Stack",
+    "description": "Score‑to‑target number game using randomized values and jQuery.",
+    "technologies": ["jQuery", "JavaScript", "Bootstrap"],
     "image": "assets/images/CrystalCollector.PNG",
     "live": "https://amontalto7.github.io/Crystal-Collector/",
     "repo": "https://github.com/amontalto7/Crystal-Collector"
   },
   {
     "title": "GOT Friend Finder",
+    "category": "Full‑Stack",
+    "description": "Survey‑based matcher that finds your best Game of Thrones friend.",
+    "technologies": ["Node", "Express", "Handlebars", "Bootstrap"],
     "image": "assets/images/friendFinder.png",
     "live": "https://friendfinder-3166.onrender.com/",
     "repo": "https://github.com/amontalto7/FriendFinder"
   },
   {
     "title": "Trippin' Travel",
+    "category": "Full‑Stack",
+    "description": "Mobile travel planner with saved trips and notes.",
+    "technologies": ["React Native", "Expo", "JavaScript"],
     "image": "assets/images/Trippin.png",
     "live": "https://github.com/amontalto7/TrippinMobileApp",
     "repo": "https://github.com/amontalto7/TrippinMobileApp"
   },
   {
     "title": "Trivia",
+    "category": "Full‑Stack",
+    "description": "Timed, multiple‑choice trivia with scoring and rounds.",
+    "technologies": ["jQuery", "JavaScript", "CSS"],
     "image": "assets/images/trivia.png",
     "live": "https://amontalto7.github.io/TriviaGame/",
     "repo": "https://github.com/amontalto7/TriviaGame"
   },
   {
     "title": "Giftastic",
+    "category": "Full‑Stack",
+    "description": "GIF searcher with favorites using the Giphy API.",
+    "technologies": ["jQuery", "Giphy API", "JavaScript"],
     "image": "assets/images/GifTastic.PNG",
     "live": "https://amontalto7.github.io/GifTastic/",
     "repo": "https://github.com/amontalto7/GifTastic"
   },
   {
     "title": "News Scraper",
+    "category": "Full‑Stack",
+    "description": "Scrapes articles and stores them for later reading.",
+    "technologies": ["Node", "Express", "MongoDB", "Cheerio"],
     "image": "assets/images/mongoscraper.png",
     "live": "https://github.com/amontalto7/newsscraper",
     "repo": "https://github.com/amontalto7/newsscraper"
   },
   {
     "title": "LIRI CLI Node App",
+    "category": "Full‑Stack",
+    "description": "Command‑line app that queries public APIs and prints results.",
+    "technologies": ["Node", "CLI", "Axios"],
     "image": "assets/images/liri.png",
     "live": "https://github.com/amontalto7/liri-node-app",
     "repo": "https://github.com/amontalto7/liri-node-app"
   },
   {
     "title": "Bamazon CLI App",
+    "category": "Full‑Stack",
+    "description": "Mock storefront CLI with inventory and purchases backed by SQL.",
+    "technologies": ["Node", "MySQL", "CLI"],
     "image": "assets/images/bamazon.png",
     "live": "https://github.com/amontalto7/Bamazon",
     "repo": "https://github.com/amontalto7/Bamazon"

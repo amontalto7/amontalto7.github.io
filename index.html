@@ -169,13 +169,10 @@
       <div class="w3-padding-64 w3-content" id="portfolio">
         <h2>My Portfolio</h2>
         <hr style="width: 200px" class="w3-opacity" />
-        <div
-          id="portfolio-grid"
-          class="w3-row w3-padding-16"
-          style="margin: 0 -16px"
-        >
-          <!-- Items will be injected here -->
-        </div>
+        <section class="projects">
+          <div id="filters" class="filters"></div>
+          <div id="projects-grid" class="grid"></div>
+        </section>
       </div>
 
       <!-- Contact Section -->
@@ -347,39 +344,100 @@
     </script>
     <script>
       fetch("portfolio.json")
-        .then((response) => response.json())
+        .then((r) => r.json())
         .then((data) => {
-          const grid = document.getElementById("portfolio-grid");
-          data.forEach((item) => {
-            const col = document.createElement("div");
-            col.className = "w3-third w3-padding-small";
+          const grid = document.getElementById("projects-grid");
+          const filters = document.getElementById("filters");
 
-            col.innerHTML = `
-              <div class="portfolio-container w3-hover">
-                <a href="${item.live}" target="_blank">
-                  <img class="pimage" src="${item.image}" style="width: 100%" alt="${
-                          item.title
-                        }" />
-                  <div class="portfolio-label">
-                    <h2>&nbsp;${item.title}</h2>
-                  </div>
-                </a>
-                ${
-                  item.repo
-                    ? `
-                  <a href="${item.repo}" target="_blank">
-                    <p class="github">Source <i class="fa fa-github"> &nbsp;</i></p>
-                  </a>
-                `
-                    : ""
-                }
-              </div>
-            `;
+          // collect unique categories (default if missing)
+          const cats = [
+            ...new Set(data.map((p) => p.category || "Full‑Stack")),
+          ].sort();
+          const hashCat = decodeURIComponent(location.hash.replace("#", ""));
+          let active = cats.includes(hashCat) ? hashCat : "QA"; // default to QA
 
-            grid.appendChild(col);
+          const tag = (t) => `<span class="tag">${t}</span>`;
+          const card = (p) => `
+        <article class="card" data-cat="${p.category || "Full‑Stack"}">
+          <img class="cover" src="${p.image}" alt="${p.title}" loading="lazy" />
+          <div class="content">
+            <h3 class="title">${p.title}</h3>
+            ${p.description ? `<p class="desc">${p.description}</p>` : ""}
+            ${
+              p.technologies && p.technologies.length
+                ? `<div class="tags">${p.technologies
+                    .slice(0, 4)
+                    .map(tag)
+                    .join("")}</div>`
+                : ""
+            }
+            <div class="actions">
+              ${
+                p.live
+                  ? `<a class="btn" href="${p.live}" target="_blank" rel="noopener">Live</a>`
+                  : ""
+              }
+              ${
+                p.repo
+                  ? `<a class="btn secondary" href="${p.repo}" target="_blank" rel="noopener">Source</a>`
+                  : ""
+              }
+            </div>
+          </div>
+        </article>`;
+
+          // render cards once
+          grid.innerHTML = data.map(card).join("");
+
+          // render filter chips
+          const renderChips = () => {
+            filters.innerHTML = [`All`, ...cats]
+              .map(
+                (c) => `
+          <button class="filter-btn ${
+            c === active || (c === "All" && active === "All") ? "active" : ""
+          }"
+                  data-cat="${c}">${c}</button>`
+              )
+              .join("");
+          };
+
+          // apply filter
+          const apply = () => {
+            const cards = [...grid.children];
+            cards.forEach((el) => {
+              const c = el.getAttribute("data-cat");
+              el.style.display = active === "All" || c === active ? "" : "none";
+            });
+            location.hash = active === "All" ? "" : encodeURIComponent(active);
+            [...filters.children].forEach((b) =>
+              b.classList.toggle("active", b.dataset.cat === active)
+            );
+          };
+
+          // initial UI
+          renderChips();
+          apply();
+
+          // events
+          filters.addEventListener("click", (e) => {
+            const btn = e.target.closest("button.filter-btn");
+            if (!btn) return;
+
+            e.preventDefault(); // stop page jump
+
+            active = btn.dataset.cat;
+
+            // only update the hash if not "All"
+            if (active === "All") {
+              history.replaceState(null, "", " "); // remove hash without jump
+            } else {
+              location.hash = encodeURIComponent(active);
+            }
+
+            apply();
           });
-        })
-        .catch((err) => console.error("Failed to load portfolio items:", err));
+        });
     </script>
   </body>
 </html>
