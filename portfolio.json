@@ -1,6 +1,7 @@
 [
   {
     "title": "Full-Stack E-Commerce QA Automation Framework",
+    "category": "QA",
     "description": "UI (Playwright) + API (RestAssured) + perf (k6) for a Dockerized microservices shop, with GitHub Actions and Allure reports published to Pages.",
     "technologies": ["Playwright", "RestAssured", "Docker", "Allure", "GitHub Actions", "Java", "TypeScript"],
     "image": "assets/images/ecomm-qa-framework-overview.png",
@@ -10,6 +11,7 @@
 
   {
     "title": "Where's Happenin'",
+    "category": "Full‑Stack",
     "description": "Find nearby events on an interactive map with search and filtering.",
     "technologies": ["JavaScript", "Google Maps API", "REST", "Bootstrap"],
     "image": "assets/images/WheresHappenin.png",
@@ -18,6 +20,7 @@
   },
   {
     "title": "Lazy Cupboard",
+    "category": "Full‑Stack",
     "description": "Recipe suggestions based on what’s already in your pantry.",
     "technologies": ["Node", "Express", "MongoDB", "Bootstrap"],
     "image": "assets/images/LazyCupboard.jpg",
@@ -26,6 +29,7 @@
   },
   {
     "title": "React Memory Game",
+    "category": "Full‑Stack",
     "description": "Simple memory click game built with React components and state.",
     "technologies": ["React", "JavaScript", "CSS"],
     "image": "assets/images/clicky.png",
@@ -34,6 +38,7 @@
   },
   {
     "title": "Crystal Collector",
+    "category": "Full‑Stack",
     "description": "Score‑to‑target number game using randomized values and jQuery.",
     "technologies": ["jQuery", "JavaScript", "Bootstrap"],
     "image": "assets/images/CrystalCollector.PNG",
@@ -42,6 +47,7 @@
   },
   {
     "title": "GOT Friend Finder",
+    "category": "Full‑Stack",
     "description": "Survey‑based matcher that finds your best Game of Thrones friend.",
     "technologies": ["Node", "Express", "Handlebars", "Bootstrap"],
     "image": "assets/images/friendFinder.png",
@@ -50,6 +56,7 @@
   },
   {
     "title": "Trippin' Travel",
+    "category": "Full‑Stack",
     "description": "Mobile travel planner with saved trips and notes.",
     "technologies": ["React Native", "Expo", "JavaScript"],
     "image": "assets/images/Trippin.png",
@@ -58,6 +65,7 @@
   },
   {
     "title": "Trivia",
+    "category": "Full‑Stack",
     "description": "Timed, multiple‑choice trivia with scoring and rounds.",
     "technologies": ["jQuery", "JavaScript", "CSS"],
     "image": "assets/images/trivia.png",
@@ -66,6 +74,7 @@
   },
   {
     "title": "Giftastic",
+    "category": "Full‑Stack",
     "description": "GIF searcher with favorites using the Giphy API.",
     "technologies": ["jQuery", "Giphy API", "JavaScript"],
     "image": "assets/images/GifTastic.PNG",
@@ -74,6 +83,7 @@
   },
   {
     "title": "News Scraper",
+    "category": "Full‑Stack",
     "description": "Scrapes articles and stores them for later reading.",
     "technologies": ["Node", "Express", "MongoDB", "Cheerio"],
     "image": "assets/images/mongoscraper.png",
@@ -82,6 +92,7 @@
   },
   {
     "title": "LIRI CLI Node App",
+    "category": "Full‑Stack",
     "description": "Command‑line app that queries public APIs and prints results.",
     "technologies": ["Node", "CLI", "Axios"],
     "image": "assets/images/liri.png",
@@ -90,6 +101,7 @@
   },
   {
     "title": "Bamazon CLI App",
+    "category": "Full‑Stack",
     "description": "Mock storefront CLI with inventory and purchases backed by SQL.",
     "technologies": ["Node", "MySQL", "CLI"],
     "image": "assets/images/bamazon.png",

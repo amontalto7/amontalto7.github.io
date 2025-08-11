@@ -116,3 +116,11 @@ body.light-mode .card { --card-bg: #ffffff; }
 body.light-mode .card .desc { color: #334; }
 body.light-mode .tag { background: rgba(0,0,0,.06); color: #223; }
 body.light-mode .btn.secondary { color:#223; border-color: rgba(0,0,0,.15); }
+
+.filters { display:flex; gap:8px; flex-wrap:wrap; margin: 0 0 14px; }
+.filter-btn {
+  padding:8px 12px; border-radius:999px; font-size:.85rem; cursor:pointer;
+  background:#ffffff; color:#0e2f33; border:1px solid rgba(0,0,0,.1);
+}
+.filter-btn.active { background:#0e2f33; color:#fff; border-color:transparent; }
+body.light-mode .filter-btn { background:#fff; color:#0e2f33; }
